@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>hey
-    <audio hidden="" id="audioPlayer" src="hbd.mp3" type ="audio/mp3">your browser does not support Html5</audio>
+<body>
+    <p id="checker"></p>
+    <audio hidden="" id="hbd.mp3" type ="audio/mp3">your browser does not support Html5</audio>
 
     <script>
-        window.onload = function() {
-    document.getElementById("audioPlayer").play();
-    }
+        document.addEventListener("click", function(){
+        document.getElementById("checker").innerHTML = "Audio playing";
+        document.getElementById("audioPlayer").play();
+    });        
     </script>
 </body>
 </html>
